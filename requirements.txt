@@ -4,18 +4,19 @@ yfinance==0.2.40
 pandas==2.2.2
 numpy==1.26.4
 plotly==5.22.0
-torch==2.3.0
 scikit-learn==1.5.0
 statsmodels==0.14.1
 scipy==1.13.1
 
-# AI forecasting models (Amazon Chronos + Salesforce Moirai)
+# Deep learning - safe build
+torch==2.1.0
+transformers==4.38.2
+
+# AI forecasting models
 chronos-forecasting==1.0.4
-uni2ts==0.1.5
 gluonts==0.13.3
+uni2ts==0.1.5
 
-# Optional (if you get SSL or cert warnings)
+# SSL certs & typing support
 certifi>=2023.7.22
-
-# For any other compatibility
 typing-extensions>=4.10.0
