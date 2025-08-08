@@ -1,22 +1,18 @@
-# Core packages
+# UI & Data
 streamlit==1.35.0
 pandas==2.2.2
 numpy==1.26.4
 yfinance==0.2.40
 plotly==5.22.0
+
+# Machine Learning
 scikit-learn==1.5.0
+torch==2.2.2+cpu --index-url https://download.pytorch.org/whl/cpu
 
-# AI & Deep Learning
-torch==2.2.2
-
-# Chronos model
+# Chronos Forecasting
 chronos-forecasting==1.0.11
 
-# Moirai model
+# Moirai Universal Model (Salesforce)
 uni2ts==0.1.7
-
-# GluonTS (needed by uni2ts / Moirai)
 gluonts==0.13.4
-
-# Other essentials
-requests>=2.31.0
+transformers==4.41.1
