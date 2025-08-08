@@ -10,17 +10,6 @@ import torch
 
 warnings.filterwarnings('ignore')
 
-# --- Lazy Loading Models ---
-@st.cache_resource
-def load_chronos_model():
-    from chronos import Autoformer
-    return Autoformer.from_pretrained("amazon/chronos-t5-small")
-
-@st.cache_resource
-def load_moirai_model():
-    from uni2ts import Uni2TSForecaster
-    return Uni2TSForecaster.from_pretrained("salesforce/moirai-tsnet-large")
-
 st.set_page_config(
     page_title="📈 Smart Stock Advisor - AI-Powered Investment Guide",
     page_icon="💰",
@@ -378,7 +367,7 @@ def show_results_page():
                     predictions = analyzer.predict_with_chronos(model, stock_data['Close'].values)
                 if predictions is not None:
                     model_loaded = True
-                    used_model = load_chronos_model()
+                    used_model = "Amazon Chronos"
         
         elif model_type == "moirai":
             model, loaded_type = analyzer.load_moirai_model(model_size)
@@ -387,7 +376,7 @@ def show_results_page():
                     predictions = analyzer.predict_with_moirai(model, stock_data['Close'].values)
                 if predictions is not None:
                     model_loaded = True
-                    used_model = load_moirai_model()
+                    used_model = "Salesforce Moirai"
         
         # Fallback to Chronos if primary failed
         if not model_loaded:
@@ -635,5 +624,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
