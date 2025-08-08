@@ -378,7 +378,7 @@ def show_results_page():
                     predictions = analyzer.predict_with_chronos(model, stock_data['Close'].values)
                 if predictions is not None:
                     model_loaded = True
-                    used_model = "Amazon Chronos"
+                    used_model = load_chronos_model()
         
         elif model_type == "moirai":
             model, loaded_type = analyzer.load_moirai_model(model_size)
@@ -387,7 +387,7 @@ def show_results_page():
                     predictions = analyzer.predict_with_moirai(model, stock_data['Close'].values)
                 if predictions is not None:
                     model_loaded = True
-                    used_model = "Salesforce Moirai"
+                    used_model = load_moirai_model()
         
         # Fallback to Chronos if primary failed
         if not model_loaded:
@@ -635,4 +635,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
