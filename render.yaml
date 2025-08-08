@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: smart-stock-advisor
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run stock.py --server.port $PORT --server.address 0.0.0.0
+    plan: free
