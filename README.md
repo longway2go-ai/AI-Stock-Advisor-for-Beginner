@@ -21,7 +21,7 @@ Welcome to **Smart Stock Advisor**, an AI-driven Streamlit web app that helps yo
 
 ## 📸 Screenshot
 
-![Smart Stock Advisor Screenshot](https://via.placeholder.com/900x400.png?text=Smart+Stock+Advisor+Demo)
+![Smart Stock Advisor Screenshot](assets/dashboard.png)
 
 ---
 
