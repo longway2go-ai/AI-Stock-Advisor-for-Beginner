@@ -10,6 +10,17 @@ import torch
 
 warnings.filterwarnings('ignore')
 
+# --- Lazy Loading Models ---
+@st.cache_resource
+def load_chronos_model():
+    from chronos import Autoformer
+    return Autoformer.from_pretrained("amazon/chronos-t5-small")
+
+@st.cache_resource
+def load_moirai_model():
+    from uni2ts import Uni2TSForecaster
+    return Uni2TSForecaster.from_pretrained("salesforce/moirai-tsnet-large")
+
 st.set_page_config(
     page_title="📈 Smart Stock Advisor - AI-Powered Investment Guide",
     page_icon="💰",
@@ -624,3 +635,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
