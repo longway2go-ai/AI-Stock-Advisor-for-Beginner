@@ -1,22 +1,22 @@
 # Core packages
 streamlit==1.35.0
-yfinance==0.2.40
 pandas==2.2.2
 numpy==1.26.4
+yfinance==0.2.40
 plotly==5.22.0
 scikit-learn==1.5.0
-statsmodels==0.14.1
-scipy==1.13.1
 
-# Deep learning - safe build
-torch==2.1.0
-transformers==4.38.2
+# AI & Deep Learning
+torch==2.2.2
 
-# AI forecasting models
-chronos-forecasting==1.0.4
-gluonts==0.13.3
-uni2ts==0.1.5
+# Chronos model
+chronos-forecasting==1.0.11
 
-# SSL certs & typing support
-certifi>=2023.7.22
-typing-extensions>=4.10.0
+# Moirai model
+uni2ts==0.1.7
+
+# GluonTS (needed by uni2ts / Moirai)
+gluonts==0.13.4
+
+# Other essentials
+requests>=2.31.0
