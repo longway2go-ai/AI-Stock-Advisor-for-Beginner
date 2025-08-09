@@ -38,7 +38,9 @@ with col1:
     if st.button("Enter Beginner Mode"):
         st.markdown(
             """
-            <meta http-equiv="refresh" content="0; url='https://github.com/longway2go-ai/AI-Stock-Advisor-for-Beginner'" />
+            <script>
+            window.open('https://github.com/longway2go-ai/AI-Stock-Advisor-for-Beginner', '_blank').focus();
+            </script>
             """,
             unsafe_allow_html=True
         )
@@ -53,7 +55,9 @@ with col2:
     if st.button("Enter Expert Mode"):
         st.markdown(
             """
-            <meta http-equiv="refresh" content="0; url='https://github.com/Sayan-ML/Time-Series-for-Experts'" />
+            <script>
+            window.open('https://github.com/Sayan-ML/Time-Series-for-Experts', '_blank').focus();
+            </script>
             """,
             unsafe_allow_html=True
         )
