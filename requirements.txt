@@ -1,11 +1,13 @@
-streamlit==1.35.0
-pandas==2.2.2
-numpy==1.26.4
-yfinance==0.2.40
-plotly==5.22.0
-scikit-learn==1.5.0
-torch==2.2.2+cpu --index-url https://download.pytorch.org/whl/cpu
-transformers==4.41.1
-chronos-forecasting==1.0.11
-uni2ts==0.1.7
-gluonts==0.13.4
+streamlit>=1.37.0
+#down libraries for stock.py
+#pandas==2.2.2
+#numpy==1.26.4
+#yfinance==0.2.40
+#plotly==5.22.0
+#scikit-learn==1.5.0
+#torch==2.2.2+cpu --index-url https://download.pytorch.org/whl/cpu
+#transformers==4.41.1
+#chronos-forecasting==1.0.11
+#uni2ts==0.1.7
+#gluonts==0.13.4
+
