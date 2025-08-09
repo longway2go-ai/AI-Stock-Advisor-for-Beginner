@@ -36,9 +36,12 @@ with col1:
         </div>
     """, unsafe_allow_html=True)
     if st.button("Enter Beginner Mode"):
-        st.markdown("[Redirecting... If not, click here](https://yourapp.streamlit.app/beginner)", unsafe_allow_html=True)
-        st.experimental_set_query_params(level="beginner")
-        st.experimental_rerun()
+        st.markdown(
+            """
+            <meta http-equiv="refresh" content="0; url='https://github.com/longway2go-ai/AI-Stock-Advisor-for-Beginner'" />
+            """,
+            unsafe_allow_html=True
+        )
 
 with col2:
     st.markdown("""
@@ -48,9 +51,12 @@ with col2:
         </div>
     """, unsafe_allow_html=True)
     if st.button("Enter Expert Mode"):
-        st.markdown("[Redirecting... If not, click here](https://yourapp.streamlit.app/expert)", unsafe_allow_html=True)
-        st.experimental_set_query_params(level="expert")
-        st.experimental_rerun()
+        st.markdown(
+            """
+            <meta http-equiv="refresh" content="0; url='https://github.com/Sayan-ML/Time-Series-for-Experts'" />
+            """,
+            unsafe_allow_html=True
+        )
 
 # --------- TEASER PROMPT ---------
 st.markdown("---")
