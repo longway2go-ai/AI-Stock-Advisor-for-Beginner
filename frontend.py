@@ -35,15 +35,12 @@ with col1:
             <p style="color: #1B2631;">For new investors who want clear, simple stock insights and easy predictions.</p>
         </div>
     """, unsafe_allow_html=True)
-    if st.button("Enter Beginner Mode"):
-        st.markdown(
-            """
-            <script>
-            window.open('https://github.com/longway2go-ai/AI-Stock-Advisor-for-Beginner', '_blank').focus();
-            </script>
-            """,
-            unsafe_allow_html=True
-        )
+    st.markdown(
+        '<a href="https://github.com/longway2go-ai/AI-Stock-Advisor-for-Beginner" target="_blank">'
+        '<button style="background-color:#21618C;color:white;padding:10px 20px;border:none;border-radius:8px;font-size:16px;cursor:pointer;">Enter Beginner Mode</button>'
+        '</a>',
+        unsafe_allow_html=True
+    )
 
 with col2:
     st.markdown("""
@@ -52,15 +49,12 @@ with col2:
             <p style="color: #1B2631;">Dive deep into technical indicators, forecasting models, and customizable visualizations.</p>
         </div>
     """, unsafe_allow_html=True)
-    if st.button("Enter Expert Mode"):
-        st.markdown(
-            """
-            <script>
-            window.open('https://github.com/Sayan-ML/Time-Series-for-Experts', '_blank').focus();
-            </script>
-            """,
-            unsafe_allow_html=True
-        )
+    st.markdown(
+        '<a href="https://github.com/Sayan-ML/Time-Series-for-Experts" target="_blank">'
+        '<button style="background-color:#117A65;color:white;padding:10px 20px;border:none;border-radius:8px;font-size:16px;cursor:pointer;">Enter Expert Mode</button>'
+        '</a>',
+        unsafe_allow_html=True
+    )
 
 # --------- TEASER PROMPT ---------
 st.markdown("---")
